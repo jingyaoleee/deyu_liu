@@ -1,0 +1,86 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <!--第一个访问页面-->
+  <welcome-file-list>
+    <welcome-file>jsp/login.jsp</welcome-file>
+  </welcome-file-list>
+  <!--进行虚拟路径配置-->
+  <!--
+  第一步，通过<servlet>标签进行注册，<servlet>标签下包含若干个子元素：
+  <servlet-name>:指定Servlet名称，一般与Servlet类名相同
+  <servlet-class>:指定Servlet类的位置，包括包名和类名
+  <description>:指定Servlet的描述信息
+  <display-name>:指定Servlet的显示名
+  <init-param>：指定初始化参数
+  第二步，把Servlet映射到URL地址,使用<servlet-mapping>标签进行映射
+  <servlet-name>:指定要映射的Servlet名称，和之前在<servlet>标签中注册
+  的名称相同
+  <url-patterm>：映射URL地址，地址前加"/"
+  -->
+  <!--<servlet>-->
+    <!--<servlet-name>servlet01</servlet-name>-->
+    <!--<servlet-class>servlet.com.Servlet01</servlet-class>-->
+  <!--</servlet>-->
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>servlet01</servlet-name>-->
+    <!--<url-pattern>/servlet01</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <!--ServletConfig的初始化参数设置-->
+  <!--<servlet>-->
+    <!--<servlet-name>servletConfig01</servlet-name>-->
+    <!--<servlet-class>servlet.com.ServletConfig01</servlet-class>-->
+    <!--<init-param>-->
+      <!--<param-name>encoding</param-name>-->
+      <!--<param-value>UTF-8</param-value>-->
+    <!--</init-param>-->
+    <!--<init-param>-->
+      <!--<param-name>user</param-name>-->
+      <!--<param-value>admin</param-value>-->
+    <!--</init-param>-->
+  <!--</servlet>-->
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>servletConfig01</servlet-name>-->
+    <!--<url-pattern>/servletConfig01</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <!--ServletContext配置web应用程序的初始化参数-->
+  <!--<context-param>-->
+    <!--<param-name>user</param-name>-->
+    <!--<param-value>admin</param-value>-->
+  <!--</context-param>-->
+  <!--<context-param>-->
+    <!--<param-name>password</param-name>-->
+    <!--<param-value>admin123</param-value>-->
+  <!--</context-param>-->
+
+
+  <!--Day01Servlet虚拟路径映射-->
+  <!--注册-->
+  <!--<servlet>-->
+    <!--<servlet-name>Day01Servlet</servlet-name>-->
+    <!--<servlet-class>day01.com.Day01Servlet</servlet-class>-->
+  <!--</servlet>-->
+  <!--路径映射-->
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>Day01Servlet</servlet-name>-->
+    <!--<url-pattern>/day01Servlet</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <!--Class94Servlet虚拟路径映射-->
+  <!--注册-->
+  <servlet>
+    <servlet-name>Class94Servlet</servlet-name>
+    <servlet-class>class94.com.Class94Servlet</servlet-class>
+  </servlet>
+  <!--映射-->
+  <servlet-mapping>
+    <servlet-name>Class94Servlet</servlet-name>
+    <url-pattern>/class94Servlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
